@@ -33,6 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:5.2.3"],\
           ["@vueuse/core", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:13.1.0"],\
           ["autoprefixer", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:10.4.21"],\
+          ["path", "npm:0.12.7"],\
           ["pinia", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:3.0.2"],\
           ["postcss", "npm:8.5.3"],\
           ["single-spa-vue", "npm:3.0.1"],\
@@ -788,6 +789,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:5.2.3"],\
           ["@vueuse/core", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:13.1.0"],\
           ["autoprefixer", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:10.4.21"],\
+          ["path", "npm:0.12.7"],\
           ["pinia", "virtual:11a77cac1abb183f49f6589d896957c0e9d546fe9a93492a4fc7c9940335180375b4be4e2e765ea156e53d3a1bac2bf1ad9d07825bfb0fc58bf819d46309ff46#npm:3.0.2"],\
           ["postcss", "npm:8.5.3"],\
           ["single-spa-vue", "npm:3.0.1"],\
@@ -1594,6 +1596,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["inherits", [\
+      ["npm:2.0.3", {\
+        "packageLocation": "../../../../.yarn/berry/cache/inherits-npm-2.0.3-401e64b080-10c0.zip/node_modules/inherits/",\
+        "packageDependencies": [\
+          ["inherits", "npm:2.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ip-address", [\
       ["npm:9.0.5", {\
         "packageLocation": "../../../../.yarn/berry/cache/ip-address-npm-9.0.5-9fa024d42a-10c0.zip/node_modules/ip-address/",\
@@ -2017,6 +2028,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["path", [\
+      ["npm:0.12.7", {\
+        "packageLocation": "../../../../.yarn/berry/cache/path-npm-0.12.7-bddabe2e86-10c0.zip/node_modules/path/",\
+        "packageDependencies": [\
+          ["path", "npm:0.12.7"],\
+          ["process", "npm:0.11.10"],\
+          ["util", "npm:0.10.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["path-key", [\
       ["npm:3.1.1", {\
         "packageLocation": "../../../../.yarn/berry/cache/path-key-npm-3.1.1-0e66ea8321-10c0.zip/node_modules/path-key/",\
@@ -2117,6 +2139,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../.yarn/berry/cache/proc-log-npm-5.0.0-405173f9b4-10c0.zip/node_modules/proc-log/",\
         "packageDependencies": [\
           ["proc-log", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["process", [\
+      ["npm:0.11.10", {\
+        "packageLocation": "../../../../.yarn/berry/cache/process-npm-0.11.10-aeb3b641ae-10c0.zip/node_modules/process/",\
+        "packageDependencies": [\
+          ["process", "npm:0.11.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2448,6 +2479,16 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/browserslist",\
           "browserslist"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["util", [\
+      ["npm:0.10.4", {\
+        "packageLocation": "../../../../.yarn/berry/cache/util-npm-0.10.4-7c577db41a-10c0.zip/node_modules/util/",\
+        "packageDependencies": [\
+          ["inherits", "npm:2.0.3"],\
+          ["util", "npm:0.10.4"]\
         ],\
         "linkType": "HARD"\
       }]\
