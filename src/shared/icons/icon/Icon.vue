@@ -2,23 +2,19 @@
   <component :is="dynamicComponent" />
 </template>
 
-<script>
-import { defineAsyncComponent } from "vue";
+<script setup lang="ts">
+import { defineAsyncComponent, defineProps, computed } from "vue";
 
-export default {
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-  },
+interface Props {
+  name: string;
+}
+const props = defineProps<Props>();
 
-  computed: {
-    dynamicComponent() {
-      const name = this.name.charAt(0).toUpperCase() + this.name.slice(1);
+const name = computed(
+  () => props.name.charAt(0).toUpperCase() + props.name.slice(1)
+);
 
-      return defineAsyncComponent(() => import(`../${this.name}/${name}.vue`));
-    },
-  },
-};
+const dynamicComponent = defineAsyncComponent(
+  () => import(`../${props.name}/${name.value}.vue`)
+);
 </script>

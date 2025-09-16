@@ -22,6 +22,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
+    extensions: [".js", ".vue", ".json", ".ts"],
     alias: [
       {
         find: "@",

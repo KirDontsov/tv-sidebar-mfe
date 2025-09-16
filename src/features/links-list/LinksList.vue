@@ -43,13 +43,11 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { useAuthStore, useSidebarStore } from "@/entities/index.js";
+import { useAuthStore, useSidebarStore } from "@/entities";
 import Icon from "@/shared/icons/icon/Icon.vue";
+import { createSidebarLinks } from "@/shared/config";
 
-const links = [
-  { id: 1, name: "Dashboard", icon: "dashboard", url: "/" },
-  { id: 2, name: "Log In", icon: "login", url: "/login" },
-];
+const links = createSidebarLinks();
 
 const authStore = useAuthStore();
 const sidebarStore = useSidebarStore();
